@@ -1,21 +1,14 @@
-import { Card, Flex } from "@chakra-ui/react";
-import { Step } from "./Step";
+import { Button, Card, Flex } from "@chakra-ui/react";
 
 const Steps = [
   {
-    icon: "/steps/1.svg",
-    title: "Purchase eco-friendly products",
-    description: "Buy products that are eco-friendly and sustainable.",
+    title: "Learn Blockchain",
   },
   {
-    icon: "/steps/2.svg",
-    title: "Upload the receipt",
-    description: "Upload your receipt and AI will verify the products.",
+    title: "Learn Vechain",
   },
   {
-    icon: "/steps/3.svg",
-    title: "Earn rewards",
-    description: "Earn B3TR for purchasing eco-friendly products.",
+    title: "Learn Vorj", 
   },
 ];
 
@@ -28,7 +21,11 @@ export const Instructions = () => {
         direction={{ base: "column", md: "row" }}
       >
         {Steps.map((step, index) => (
-          <Step key={index} {...step} />
+          <Button size='md'
+          height='108px'
+          width='400px'
+          border='2px'
+          borderColor='yellow.500'>{step.title}</Button>
         ))}
       </Flex>
     </Card>

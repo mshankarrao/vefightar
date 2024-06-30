@@ -6,10 +6,7 @@ async function deployMugshot() {
     const ecoEarn = await ethers.getContractFactory('EcoEarn');
 
     const ecoEarnInstance = await ecoEarn.deploy(
-        owner,
         config.TOKEN_ADDRESS,
-        config.CYCLE_DURATION,
-        config.MAX_SUBMISSIONS_PER_CYCLE,
     );
 
     const ecoEarnAddress = await ecoEarnInstance.getAddress();

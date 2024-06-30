@@ -87,7 +87,7 @@ export const Dropzone = () => {
 
   return (
     <VStack w={"full"} mt={3}>
-      <Box
+      {/* <Box
         {...getRootProps()}
         p={5}
         border="2px"
@@ -112,7 +112,7 @@ export const Dropzone = () => {
           <ScanIcon size={120} color={"gray"} />
           <Text>Upload to scan</Text>
         </HStack>
-      </Box>
+      </Box> */}
     </VStack>
   );
 };
